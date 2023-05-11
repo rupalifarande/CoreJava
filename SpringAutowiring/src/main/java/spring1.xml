@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean id="cust" class="com.model.Company" autowire="byType">  
+        
+        <property name="c_id" value="2222"></property>
+          <property name="c_name" value="Equations Work"></property>
+         
+    </bean>
+
+
+
+
+    <bean id="employee1" class="com.model.Employee">  
+        
+        <property name="e_id" value="28"></property>
+          <property name="e_name" value="Rupali"></property>
+         
+    </bean>
+
+   
+
+</beans>

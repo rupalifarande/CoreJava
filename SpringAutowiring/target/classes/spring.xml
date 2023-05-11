@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean id="au" class="com.model.Author" autowire="byName">  
+        
+        <property name="a_id" value="10001"></property>
+          <property name="a_name" value="Robert"></property>
+         
+    </bean>
+
+
+
+
+    <bean id="book" class="com.model.Book">  
+        
+        <property name="b_id" value="111"></property>
+          <property name="book_name" value="Rich dad poor dad"></property>
+         
+    </bean>
+
+   
+
+</beans>
